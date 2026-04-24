@@ -10,6 +10,7 @@ Este repositório foi revisado e ajustado para:
 - compilar com `latexmk` sem warnings no `main_ppgea_ufrn.log`;
 - usar `biblatex-abnt` + `biber` no lugar de `abntex2cite` + BibTeX;
 - atualizar as referências normativas citadas no próprio modelo para versões mais recentes.
+- enviar arquivos auxiliares e saídas de compilação para o diretório `build/`.
 
 ## Normas ABNT cobertas
 
@@ -44,6 +45,7 @@ As seguintes validações foram feitas neste repositório:
 - criação de uma cópia local de `abntex2.cls` para eliminar avisos de compatibilidade da instalação padrão com `babel` e `memoir`;
 - migração de `abntex2cite`/BibTeX para `biblatex-abnt`/Biber;
 - normalização do arquivo `referencias.bib` para o formato aceito por `biber` (`month` numérico e `urldate` em ISO);
+- configuração do `latexmk` para gerar artefatos em `build/`;
 - compilação final com `latexmk -pdf -interaction=nonstopmode main_ppgea_ufrn.tex`.
 
 ## Arquivos principais
@@ -76,6 +78,12 @@ Compile a partir da raiz do projeto:
 latexmk -pdf -interaction=nonstopmode main_ppgea_ufrn.tex
 ```
 
+O projeto já inclui um arquivo `latexmkrc`, então os arquivos auxiliares e a saída de compilação são enviados automaticamente para:
+
+```text
+build/
+```
+
 Para limpar arquivos auxiliares:
 
 ```bash
@@ -87,14 +95,17 @@ latexmk -C
 O PDF principal é:
 
 ```text
-main_ppgea_ufrn.pdf
+build/main_ppgea_ufrn.pdf
 ```
+
+Arquivos como `.aux`, `.bbl`, `.bcf`, `.run.xml`, `.log`, `.lof`, `.lot`, `.loq` e similares também passam a ser gerados em `build/`.
 
 ## Observações importantes
 
 - O repositório mantém exemplos de texto herdados do modelo canônico do `abntex2`. Eles servem como demonstração e devem ser substituídos pelo conteúdo real da dissertação.
 - O template está tecnicamente pronto para uso, mas a conformidade final exigida em defesa e depósito institucional deve sempre ser conferida com as orientações atualizadas do PPgEA/UFRN e da biblioteca da UFRN.
 - Se o programa adotar manual interno com exigências adicionais, essas regras institucionais podem prevalecer sobre o padrão ABNT genérico.
+- O repositório inclui um `.gitignore` voltado para não versionar artefatos de compilação do LaTeX.
 
 ## Base técnica usada nesta revisão
 
