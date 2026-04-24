@@ -26,6 +26,3 @@ build/
 
 # Biber / BibLaTeX extras
 *.xml
-
-# Generated PDF artifacts
-*.pdf
