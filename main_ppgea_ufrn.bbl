@@ -1,104 +1,467 @@
-\providecommand{\abntreprintinfo}[1]{%
- \citeonline{#1}}
-\setlength{\labelsep}{0pt}\begin{thebibliography}{}
-\providecommand{\abntrefinfo}[3]{}
-\providecommand{\abntbstabout}[1]{}
-\abntbstabout{v-1.9.7 }
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
 
-\bibitem[Araujo 2012]{araujo2012}
-\abntrefinfo{Araujo}{ARAUJO}{2012}
-{ARAUJO, L.~C.
-\emph{Configura{\c c}{\~a}o}: uma perspectiva de {A}rquitetura da {I}nforma{\c
-  c}{\~a}o da {E}scola de {B}ras{\'\i}lia.
-Disserta\c{c}\~{a}o (Mestrado) --- Universidade de Bras{\'\i}lia,
-  Bras{\'\i}lia, mar. 2012.}
 
-\bibitem[Araujo 2015]{abntex2classe}
-\abntrefinfo{Araujo}{ARAUJO}{2015a}
-{ARAUJO, L.~C. \emph{A classe abntex2: Modelo can{\^o}nico de trabalhos
-  acad{\^e}micos brasileiros compat{\'\i}vel com as normas ABNT NBR 14724:2011,
-  ABNT NBR 6024:2012 e outras}.
-[S.l.], 2015. Dispon{\'\i}vel em: \url{http://www.abntex.net.br/}.}
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{abntex2classe}{manual}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3ebd20695bd75494918b0830766ddb8a}{%
+           family={Araujo},
+           familyi={A\bibinitperiod},
+           given={Lauro\bibnamedelima César},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {Equipe abnTeX2}%
+      }
+      \strng{namehash}{3ebd20695bd75494918b0830766ddb8a}
+      \strng{fullhash}{3ebd20695bd75494918b0830766ddb8a}
+      \strng{fullhashraw}{3ebd20695bd75494918b0830766ddb8a}
+      \strng{bibnamehash}{3ebd20695bd75494918b0830766ddb8a}
+      \strng{authorbibnamehash}{3ebd20695bd75494918b0830766ddb8a}
+      \strng{authornamehash}{3ebd20695bd75494918b0830766ddb8a}
+      \strng{authorfullhash}{3ebd20695bd75494918b0830766ddb8a}
+      \strng{authorfullhashraw}{3ebd20695bd75494918b0830766ddb8a}
+      \field{extraname}{1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A classe abntex2: Modelo canônico de trabalhos acadêmicos brasileiros compatível com as normas ABNT NBR 14724:2011, ABNT NBR 6024:2012 e outras}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb http://www.abntex.net.br/
+      \endverb
+      \verb{url}
+      \verb http://www.abntex.net.br/
+      \endverb
+    \endentry
+    \entry{abntex2-wiki-como-customizar}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3ebd20695bd75494918b0830766ddb8a}{%
+           family={Araujo},
+           familyi={A\bibinitperiod},
+           given={Lauro\bibnamedelima César},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3ebd20695bd75494918b0830766ddb8a}
+      \strng{fullhash}{3ebd20695bd75494918b0830766ddb8a}
+      \strng{fullhashraw}{3ebd20695bd75494918b0830766ddb8a}
+      \strng{bibnamehash}{3ebd20695bd75494918b0830766ddb8a}
+      \strng{authorbibnamehash}{3ebd20695bd75494918b0830766ddb8a}
+      \strng{authornamehash}{3ebd20695bd75494918b0830766ddb8a}
+      \strng{authorfullhash}{3ebd20695bd75494918b0830766ddb8a}
+      \strng{authorfullhashraw}{3ebd20695bd75494918b0830766ddb8a}
+      \field{extraname}{2}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Wiki do abnTeX2}
+      \field{title}{Como customizar o abnTeX2}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2015}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/abntex/abntex2/wiki/ComoCustomizar
+      \endverb
+      \verb{url}
+      \verb https://github.com/abntex/abntex2/wiki/ComoCustomizar
+      \endverb
+      \keyw{wiki}
+    \endentry
+    \entry{araujo2012}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3ebd20695bd75494918b0830766ddb8a}{%
+           family={Araujo},
+           familyi={A\bibinitperiod},
+           given={Lauro\bibnamedelima César},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Universidade de Brasília}%
+      }
+      \list{location}{1}{%
+        {Brasília}%
+      }
+      \strng{namehash}{3ebd20695bd75494918b0830766ddb8a}
+      \strng{fullhash}{3ebd20695bd75494918b0830766ddb8a}
+      \strng{fullhashraw}{3ebd20695bd75494918b0830766ddb8a}
+      \strng{bibnamehash}{3ebd20695bd75494918b0830766ddb8a}
+      \strng{authorbibnamehash}{3ebd20695bd75494918b0830766ddb8a}
+      \strng{authornamehash}{3ebd20695bd75494918b0830766ddb8a}
+      \strng{authorfullhash}{3ebd20695bd75494918b0830766ddb8a}
+      \strng{authorfullhashraw}{3ebd20695bd75494918b0830766ddb8a}
+      \field{extraname}{3}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{bookpagination}{sheet}
+      \field{month}{3}
+      \field{subtitle}{uma perspectiva de {A}rquitetura da {I}nformação da {E}scola de {B}rasília}
+      \field{title}{Configuração}
+      \field{type}{mathesis}
+      \field{year}{2012}
+    \endentry
+    \entry{NBR10520:2023}{manual}{}{}
+      \name{shortauthor}{1}{}{%
+        {{un=0,uniquepart=base,hash=25e485c3f2fbdf1b897e6899dd1f8bef}{%
+           family={ABNT},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Rio de Janeiro}%
+      }
+      \list{organization}{1}{%
+        {Associação Brasileira de Normas Técnicas}%
+      }
+      \strng{namehash}{25e485c3f2fbdf1b897e6899dd1f8bef}
+      \strng{bibnamehash}{25e485c3f2fbdf1b897e6899dd1f8bef}
+      \strng{shortauthorbibnamehash}{25e485c3f2fbdf1b897e6899dd1f8bef}
+      \strng{shortauthornamehash}{25e485c3f2fbdf1b897e6899dd1f8bef}
+      \strng{shortauthorfullhash}{25e485c3f2fbdf1b897e6899dd1f8bef}
+      \strng{shortauthorfullhashraw}{25e485c3f2fbdf1b897e6899dd1f8bef}
+      \field{extraname}{1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{month}{7}
+      \field{subtitle}{Informação e documentação --- Apresentação de citações em documentos}
+      \field{title}{{NBR} 10520}
+      \field{year}{2023}
+      \field{pages}{19}
+      \range{pages}{1}
+    \endentry
+    \entry{NBR14724:2024}{manual}{}{}
+      \name{shortauthor}{1}{}{%
+        {{un=0,uniquepart=base,hash=25e485c3f2fbdf1b897e6899dd1f8bef}{%
+           family={ABNT},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Rio de Janeiro}%
+      }
+      \list{organization}{1}{%
+        {Associação Brasileira de Normas Técnicas}%
+      }
+      \strng{namehash}{25e485c3f2fbdf1b897e6899dd1f8bef}
+      \strng{bibnamehash}{25e485c3f2fbdf1b897e6899dd1f8bef}
+      \strng{shortauthorbibnamehash}{25e485c3f2fbdf1b897e6899dd1f8bef}
+      \strng{shortauthornamehash}{25e485c3f2fbdf1b897e6899dd1f8bef}
+      \strng{shortauthorfullhash}{25e485c3f2fbdf1b897e6899dd1f8bef}
+      \strng{shortauthorfullhashraw}{25e485c3f2fbdf1b897e6899dd1f8bef}
+      \field{extraname}{2}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{note}{Substitui a edição anterior da norma}
+      \field{subtitle}{Informação e documentação --- trabalhos acadêmicos --- apresentação}
+      \field{title}{{NBR} 14724}
+      \field{year}{2024}
+      \field{pages}{18}
+      \range{pages}{1}
+    \endentry
+    \entry{NBR6024:2012}{manual}{}{}
+      \name{shortauthor}{1}{}{%
+        {{un=0,uniquepart=base,hash=25e485c3f2fbdf1b897e6899dd1f8bef}{%
+           family={ABNT},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Rio de Janeiro}%
+      }
+      \list{organization}{1}{%
+        {Associação Brasileira de Normas Técnicas}%
+      }
+      \strng{namehash}{25e485c3f2fbdf1b897e6899dd1f8bef}
+      \strng{bibnamehash}{25e485c3f2fbdf1b897e6899dd1f8bef}
+      \strng{shortauthorbibnamehash}{25e485c3f2fbdf1b897e6899dd1f8bef}
+      \strng{shortauthornamehash}{25e485c3f2fbdf1b897e6899dd1f8bef}
+      \strng{shortauthorfullhash}{25e485c3f2fbdf1b897e6899dd1f8bef}
+      \strng{shortauthorfullhashraw}{25e485c3f2fbdf1b897e6899dd1f8bef}
+      \field{extraname}{3}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{subtitle}{Numeração progressiva das seções de um documento}
+      \field{title}{{NBR} 6024}
+      \field{year}{2012}
+      \field{pages}{4}
+      \range{pages}{1}
+    \endentry
+    \entry{NBR6028:2021}{manual}{}{}
+      \name{shortauthor}{1}{}{%
+        {{un=0,uniquepart=base,hash=25e485c3f2fbdf1b897e6899dd1f8bef}{%
+           family={ABNT},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Rio de Janeiro}%
+      }
+      \list{organization}{1}{%
+        {Associação Brasileira de Normas Técnicas}%
+      }
+      \strng{namehash}{25e485c3f2fbdf1b897e6899dd1f8bef}
+      \strng{bibnamehash}{25e485c3f2fbdf1b897e6899dd1f8bef}
+      \strng{shortauthorbibnamehash}{25e485c3f2fbdf1b897e6899dd1f8bef}
+      \strng{shortauthornamehash}{25e485c3f2fbdf1b897e6899dd1f8bef}
+      \strng{shortauthorfullhash}{25e485c3f2fbdf1b897e6899dd1f8bef}
+      \strng{shortauthorfullhashraw}{25e485c3f2fbdf1b897e6899dd1f8bef}
+      \field{extraname}{4}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{subtitle}{Resumo - Apresentação}
+      \field{title}{{NBR} 6028}
+      \field{year}{2021}
+      \field{pages}{3}
+      \range{pages}{1}
+    \endentry
+    \entry{babel}{manual}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d52f183a29af96d48695b8bea23e66e1}{%
+           family={Braams},
+           familyi={B\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d52f183a29af96d48695b8bea23e66e1}
+      \strng{fullhash}{d52f183a29af96d48695b8bea23e66e1}
+      \strng{fullhashraw}{d52f183a29af96d48695b8bea23e66e1}
+      \strng{bibnamehash}{d52f183a29af96d48695b8bea23e66e1}
+      \strng{authorbibnamehash}{d52f183a29af96d48695b8bea23e66e1}
+      \strng{authornamehash}{d52f183a29af96d48695b8bea23e66e1}
+      \strng{authorfullhash}{d52f183a29af96d48695b8bea23e66e1}
+      \strng{authorfullhashraw}{d52f183a29af96d48695b8bea23e66e1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{title}{Babel, a multilingual package for use with LATEX's standard document classes}
+      \field{urlday}{17}
+      \field{urlmonth}{2}
+      \field{urlyear}{2013}
+      \field{year}{2008}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://mirrors.ctan.org/info/babel/babel.pdf
+      \endverb
+      \verb{url}
+      \verb http://mirrors.ctan.org/info/babel/babel.pdf
+      \endverb
+    \endentry
+    \entry{ibge1993}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3898f1ceb6fdd56f963db7f9326130e4}{%
+           family={IBGE},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Rio de Janeiro}%
+      }
+      \list{organization}{1}{%
+        {http://biblioteca.ibge.gov.br/visualizacao/livros/liv23907.pdf}%
+      }
+      \list{publisher}{1}{%
+        {Centro de Documentação e Disseminação de Informações. Fundação Intituto Brasileiro de Geografia e Estatística}%
+      }
+      \strng{namehash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{fullhash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{fullhashraw}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{bibnamehash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{authorbibnamehash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{authornamehash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{authorfullhash}{3898f1ceb6fdd56f963db7f9326130e4}
+      \strng{authorfullhashraw}{3898f1ceb6fdd56f963db7f9326130e4}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{title}{Normas de apresentação tabular}
+      \field{urlday}{21}
+      \field{urlmonth}{8}
+      \field{urlyear}{2013}
+      \field{year}{1993}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{biblatex-abnt}{manual}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=abfe46a383a472a8797c073241b0ecfe}{%
+           family={Marques},
+           familyi={M\bibinitperiod},
+           given={Daniel\bibnamedelima Ballester},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{abfe46a383a472a8797c073241b0ecfe}
+      \strng{fullhash}{abfe46a383a472a8797c073241b0ecfe}
+      \strng{fullhashraw}{abfe46a383a472a8797c073241b0ecfe}
+      \strng{bibnamehash}{abfe46a383a472a8797c073241b0ecfe}
+      \strng{authorbibnamehash}{abfe46a383a472a8797c073241b0ecfe}
+      \strng{authornamehash}{abfe46a383a472a8797c073241b0ecfe}
+      \strng{authorfullhash}{abfe46a383a472a8797c073241b0ecfe}
+      \strng{authorfullhashraw}{abfe46a383a472a8797c073241b0ecfe}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{Estilo BibLaTeX compatível com as normas da ABNT}
+      \field{title}{biblatex-abnt}
+      \field{urlday}{24}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ctan.org/pkg/biblatex-abnt
+      \endverb
+      \verb{url}
+      \verb https://ctan.org/pkg/biblatex-abnt
+      \endverb
+    \endentry
+    \entry{van86}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=0c678a4931087804e07b542f56f3a976}{%
+           family={{van}},
+           familyi={v\bibinitperiod},
+           given={John\bibnamedelima P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0,
+           suffix={Gigch},
+           suffixi={G\bibinitperiod},
+           suffixun=0}}%
+        {{un=0,uniquepart=base,hash=873f474259aa6b1c3af5751e954df194}{%
+           family={Pipino},
+           familyi={P\bibinitperiod},
+           given={Leo\bibnamedelima L.},
+           giveni={L\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{62af93d42cabf66499014e102904b71c}
+      \strng{fullhash}{62af93d42cabf66499014e102904b71c}
+      \strng{fullhashraw}{62af93d42cabf66499014e102904b71c}
+      \strng{bibnamehash}{62af93d42cabf66499014e102904b71c}
+      \strng{authorbibnamehash}{62af93d42cabf66499014e102904b71c}
+      \strng{authornamehash}{62af93d42cabf66499014e102904b71c}
+      \strng{authorfullhash}{62af93d42cabf66499014e102904b71c}
+      \strng{authorfullhashraw}{62af93d42cabf66499014e102904b71c}
+      \field{sortinit}{v}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Future Computing Systems}
+      \field{number}{1}
+      \field{title}{In search for a paradigm for the discipline of information systems}
+      \field{volume}{1}
+      \field{year}{1986}
+      \field{pages}{71\bibrangedash 97}
+      \range{pages}{27}
+    \endentry
+    \entry{memoir}{manual}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=939ad18f84ff6e59c3d1a6435b8ebd88}{%
+           family={Wilson},
+           familyi={W\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1123b5e0a7ab7bd377d36961a535c94b}{%
+           family={Madsen},
+           familyi={M\bibinitperiod},
+           given={Lars},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Normandy Park, WA}%
+      }
+      \list{organization}{1}{%
+        {The Herries Press}%
+      }
+      \strng{namehash}{23c35483b1f74b3000c5b0a5b5baa3c0}
+      \strng{fullhash}{23c35483b1f74b3000c5b0a5b5baa3c0}
+      \strng{fullhashraw}{23c35483b1f74b3000c5b0a5b5baa3c0}
+      \strng{bibnamehash}{23c35483b1f74b3000c5b0a5b5baa3c0}
+      \strng{authorbibnamehash}{23c35483b1f74b3000c5b0a5b5baa3c0}
+      \strng{authornamehash}{23c35483b1f74b3000c5b0a5b5baa3c0}
+      \strng{authorfullhash}{23c35483b1f74b3000c5b0a5b5baa3c0}
+      \strng{authorfullhashraw}{23c35483b1f74b3000c5b0a5b5baa3c0}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Memoir Class for Configurable Typesetting - User Guide}
+      \field{urlday}{19}
+      \field{urlmonth}{12}
+      \field{urlyear}{2012}
+      \field{year}{2010}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://mirrors.ctan.org/macros/latex/contrib/memoir/memman.pdf
+      \endverb
+      \verb{url}
+      \verb http://mirrors.ctan.org/macros/latex/contrib/memoir/memman.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
 
-\bibitem[Araujo 2015]{abntex2-wiki-como-customizar}
-\abntrefinfo{Araujo}{ARAUJO}{2015b}
-{ARAUJO, L.~C. \emph{Como customizar o abnTeX2}. 2015. Wiki do abnTeX2.
-Dispon{\'\i}vel em:
-  \url{https://github.com/abntex/abntex2/wiki/ComoCustomizar}. Acesso em: 27
-  abr 2015.}
-
-\bibitem[Araujo 2015]{abntex2cite}
-\abntrefinfo{Araujo}{ARAUJO}{2015c}
-{ARAUJO, L.~C. \emph{O pacote abntex2cite: Estilos bibliogr{\'a}ficos
-  compat{\'\i}veis com a ABNT NBR 6023}.
-[S.l.], 2015. Dispon{\'\i}vel em: \url{http://www.abntex.net.br/}.}
-
-\bibitem[Araujo 2015]{abntex2cite-alf}
-\abntrefinfo{Araujo}{ARAUJO}{2015d}
-{ARAUJO, L.~C. \emph{O pacote abntex2cite: t{\'o}picos espec{\'\i}ficos da ABNT
-  NBR 10520:2002 e o estilo bibliogr{\'a}fico alfab{\'e}tico (sistema
-  autor-data)}.
-[S.l.], 2015. Dispon{\'\i}vel em: \url{http://www.abntex.net.br/}.}
-
-\bibitem[Associa{\c c}\~ao Brasileira de Normas T\'ecnicas 2002]{NBR10520:2002}
-\abntrefinfo{ABNT}{ABNT}{2002}
-{ASSOCIA{\c C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS. \emph{{NBR} 10520}:
-  Informa{\c c}\~ao e documenta{\c c}\~ao --- apresenta{\c c}\~ao de cita{\c
-  c}\~oes em documentos.
-Rio de Janeiro, 2002. 7~p.}
-
-\bibitem[Associa{\c c}\~ao Brasileira de Normas T\'ecnicas 2003]{NBR6028:2003}
-\abntrefinfo{ABNT}{ABNT}{2003}
-{ASSOCIA{\c C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS. \emph{{NBR} 6028}: Resumo -
-  apresenta{\c c}{\~a}o.
-Rio de Janeiro, 2003. 2~p.}
-
-\bibitem[Associa{\c c}\~ao Brasileira de Normas T\'ecnicas 2005]{NBR14724:2005}
-\abntrefinfo{ABNT}{ABNT}{2005}
-{ASSOCIA{\c C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS. \emph{{NBR} 14724}:
-  Informa{\c c}\~ao e documenta{\c c}\~ao --- trabalhos acad\^emicos ---
-  apresenta{\c c}\~ao.
-Rio de Janeiro, 2005. 9~p.}
-
-\bibitem[Associa{\c c}\~ao Brasileira de Normas T\'ecnicas 2011]{NBR14724:2011}
-\abntrefinfo{ABNT}{ABNT}{2011}
-{ASSOCIA{\c C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS. \emph{{NBR} 14724}:
-  Informa{\c c}\~ao e documenta{\c c}\~ao --- trabalhos acad\^emicos ---
-  apresenta{\c c}\~ao.
-Rio de Janeiro, 2011. 15~p. Substitui a Ref.~\citeonline{NBR14724:2005}.}
-
-\bibitem[Associa{\c c}\~ao Brasileira de Normas T\'ecnicas 2012]{NBR6024:2012}
-\abntrefinfo{ABNT}{ABNT}{2012}
-{ASSOCIA{\c C}\~AO BRASILEIRA DE NORMAS T\'ECNICAS. \emph{{NBR} 6024}:
-  Numera{\c c}\~ao progressiva das se{\c c}\~oes de um documento.
-Rio de Janeiro, 2012. 4~p.}
-
-\bibitem[Braams 2008]{babel}
-\abntrefinfo{Braams}{BRAAMS}{2008}
-{BRAAMS, J. \emph{Babel, a multilingual package for use with LATEX's standard
-  document classes}.
-[S.l.], 2008. Dispon{\'\i}vel em:
-  \url{http://mirrors.ctan.org/info/babel/babel.pdf}. Acesso em: 17 fev. 2013.}
-
-\bibitem[IBGE 1993]{ibge1993}
-\abntrefinfo{IBGE}{IBGE}{1993}
-{IBGE. \emph{Normas de apresenta{\c c}{\~a}o tabular}. 3. ed. Rio de Janeiro:
-  Centro de Documenta{\c c}{\~a}o e Dissemina{\c c}{\~a}o de Informa{\c
-  c}{\~o}es. Funda{\c c}{\~a}o Intituto Brasileiro de Geografia e
-  Estat{\'\i}stica, 1993. Acesso em: 21 ago 2013.}
-
-\bibitem[{van} Gigch e Pipino 1986]{van86}
-\abntrefinfo{{van} Gigch e Pipino}{{van} GIGCH; PIPINO}{1986}
-{{van} GIGCH, J.~P.; PIPINO, L.~L. In search for a paradigm for the discipline
-  of information systems.
-\emph{Future Computing Systems}, v.~1, n.~1, p. 71--97, 1986.}
-
-\bibitem[Wilson e Madsen 2010]{memoir}
-\abntrefinfo{Wilson e Madsen}{WILSON; MADSEN}{2010}
-{WILSON, P.; MADSEN, L. \emph{The Memoir Class for Configurable Typesetting -
-  User Guide}.
-Normandy Park, WA, 2010. Dispon{\'\i}vel em:
-  \url{http://mirrors.ctan.org/macros/latex/contrib/memoir/memman.pdf}. Acesso
-  em: 19 dez. 2012.}
-
-\end{thebibliography}

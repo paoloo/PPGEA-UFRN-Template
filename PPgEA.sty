@@ -16,6 +16,7 @@
 \usepackage{color}				% Controle das cores
 \usepackage{graphicx}			% Inclusão de gráficos
 \usepackage{microtype} 			% para melhorias de justificação
+\usepackage{csquotes}           % recomendado pelo biblatex
 \usepackage{xurl}               % melhora a quebra de URLs longas
 % ---
 		
@@ -28,29 +29,31 @@
 % ---
 % Pacotes de citações
 % ---
-\usepackage[brazilian,hyperpageref]{backref}	% Paginas com as citações na bibl
-\usepackage[alf]{abntex2cite}									% Citações padrão ABNT
+\usepackage[
+  backend=biber,
+  style=abnt,
+  backref=true
+]{biblatex}
+
+% Compatibilidade com a sintaxe tradicional do template:
+% em abntex2cite, um único argumento opcional era tratado como pós-nota.
+\let\abntbiblatexorigcite\cite
+\RenewDocumentCommand{\cite}{o o m}{%
+  \IfNoValueTF{#1}
+    {\IfNoValueTF{#2}{\abntbiblatexorigcite{#3}}{\abntbiblatexorigcite[#2]{#3}}}
+    {\IfNoValueTF{#2}{\abntbiblatexorigcite[][ #1]{#3}}{\abntbiblatexorigcite[#1][#2]{#3}}}%
+}
+
+\let\abntbiblatexorigtextcite\textcite
+\NewDocumentCommand{\citeonline}{o o m}{%
+  \IfNoValueTF{#1}
+    {\IfNoValueTF{#2}{\abntbiblatexorigtextcite{#3}}{\abntbiblatexorigtextcite[#2]{#3}}}
+    {\IfNoValueTF{#2}{\abntbiblatexorigtextcite[][ #1]{#3}}{\abntbiblatexorigtextcite[#1][#2]{#3}}}%
+}
 
 % --- 
 % CONFIGURAÇÕES DE PACOTES
 % --- 
-
-% ---
-% Configurações do pacote backref
-% Usado sem a opção hyperpageref de backref
-\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
-% Texto padrão antes do número das páginas
-\renewcommand{\backref}{}
-% Define os textos da citação
-\renewcommand*{\backrefalt}[4]{
-	\ifcase #1 %
-		Nenhuma citação no texto.%
-	\or
-		Citado na página #2.%
-	\else
-		Citado #1 vezes nas páginas #2.%
-	\fi}%
-% ---
 
 % Evita páginas em branco extras geradas por \cleardoublepage em documentos
 % configurados para impressão frente e verso.
