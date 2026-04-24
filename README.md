@@ -10,7 +10,7 @@ Este repositório foi revisado e ajustado para:
 - compilar com `latexmk` sem warnings no `main_ppgea_ufrn.log`;
 - usar `biblatex-abnt` + `biber` no lugar de `abntex2cite` + BibTeX;
 - atualizar as referências normativas citadas no próprio modelo para versões mais recentes.
-- enviar arquivos auxiliares e saídas de compilação para o diretório `build/`.
+- manter o PDF principal na raiz do projeto e deixar arquivos auxiliares fora do versionamento via `.gitignore`.
 
 ## Normas ABNT cobertas
 
@@ -45,7 +45,7 @@ As seguintes validações foram feitas neste repositório:
 - criação de uma cópia local de `abntex2.cls` para eliminar avisos de compatibilidade da instalação padrão com `babel` e `memoir`;
 - migração de `abntex2cite`/BibTeX para `biblatex-abnt`/Biber;
 - normalização do arquivo `referencias.bib` para o formato aceito por `biber` (`month` numérico e `urldate` em ISO);
-- configuração do `latexmk` para gerar artefatos em `build/`;
+- simplificação da configuração do `latexmk` para compilar diretamente na raiz do projeto;
 - compilação final com `latexmk -pdf -interaction=nonstopmode main_ppgea_ufrn.tex`.
 
 ## Arquivos principais
@@ -81,7 +81,7 @@ latexmk -pdf -interaction=nonstopmode main_ppgea_ufrn.tex
 O projeto já inclui um arquivo `latexmkrc`, então os arquivos auxiliares e a saída de compilação são enviados automaticamente para:
 
 ```text
-build/
+raiz do projeto
 ```
 
 Para limpar arquivos auxiliares:
@@ -95,10 +95,10 @@ latexmk -C
 O PDF principal é:
 
 ```text
-build/main_ppgea_ufrn.pdf
+main_ppgea_ufrn.pdf
 ```
 
-Arquivos como `.aux`, `.bbl`, `.bcf`, `.run.xml`, `.log`, `.lof`, `.lot`, `.loq` e similares também passam a ser gerados em `build/`.
+Arquivos como `.aux`, `.bbl`, `.bcf`, `.run.xml`, `.log`, `.lof`, `.lot`, `.loq` e similares também são gerados na raiz e em subdiretórios do projeto, mas ficam cobertos pelo `.gitignore`.
 
 ## Observações importantes
 

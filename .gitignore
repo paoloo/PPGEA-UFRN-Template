@@ -1,9 +1,6 @@
 # macOS
 .DS_Store
 
-# Latexmk build directory
-build/
-
 # LaTeX auxiliary files
 *.aux
 *.bbl
