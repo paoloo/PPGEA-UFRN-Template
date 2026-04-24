@@ -10,7 +10,7 @@ Este repositório foi revisado e ajustado para:
 - compilar com `latexmk` sem warnings no `main_ppgea_ufrn.log`;
 - usar `biblatex-abnt` + `biber` no lugar de `abntex2cite` + BibTeX;
 - atualizar as referências normativas citadas no próprio modelo para versões mais recentes.
-- manter o PDF principal na raiz do projeto e deixar arquivos auxiliares fora do versionamento via `.gitignore`.
+- manter a raiz do repositório sem artefatos de compilação, enviando saídas para `build/`.
 
 ## Normas ABNT cobertas
 
@@ -45,7 +45,7 @@ As seguintes validações foram feitas neste repositório:
 - criação de uma cópia local de `abntex2.cls` para eliminar avisos de compatibilidade da instalação padrão com `babel` e `memoir`;
 - migração de `abntex2cite`/BibTeX para `biblatex-abnt`/Biber;
 - normalização do arquivo `referencias.bib` para o formato aceito por `biber` (`month` numérico e `urldate` em ISO);
-- simplificação da configuração do `latexmk` para compilar diretamente na raiz do projeto;
+- configuração do `latexmk` para compilar em `build/`;
 - compilação final com `latexmk -pdf -interaction=nonstopmode main_ppgea_ufrn.tex`.
 
 ## Arquivos principais
@@ -81,7 +81,7 @@ latexmk -pdf -interaction=nonstopmode main_ppgea_ufrn.tex
 O projeto já inclui um arquivo `latexmkrc`, então os arquivos auxiliares e a saída de compilação são enviados automaticamente para:
 
 ```text
-raiz do projeto
+build/
 ```
 
 Para limpar arquivos auxiliares:
@@ -95,13 +95,10 @@ latexmk -C
 O PDF principal é:
 
 ```text
-main_ppgea_ufrn.pdf
+build/main_ppgea_ufrn.pdf
 ```
 
-Arquivos como `.aux`, `.bbl`, `.bcf`, `.run.xml`, `.log`, `.lof`, `.lot`, `.loq` e similares também são gerados na raiz e em subdiretórios do projeto, mas ficam cobertos pelo `.gitignore`.
-
-Exceção:
-O repositório pode manter versionados os arquivos `main_ppgea_ufrn.toc`, `main_ppgea_ufrn.lof`, `main_ppgea_ufrn.lot`, `main_ppgea_ufrn.loq`, `main_ppgea_ufrn.bbl` e `main_ppgea_ufrn.ind`. Eles são mantidos de propósito para reduzir a degradação do primeiro build em um clone fresco, especialmente quando o usuário compila apenas uma vez pelo editor.
+Arquivos como `.aux`, `.bbl`, `.bcf`, `.run.xml`, `.log`, `.lof`, `.lot`, `.loq` e similares também passam a ser gerados em `build/` e ficam fora do versionamento.
 
 ## Observações importantes
 
