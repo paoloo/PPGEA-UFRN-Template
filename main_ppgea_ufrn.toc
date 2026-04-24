@@ -1,0 +1,110 @@
+\changetocdepth {4}
+\babel@toc {brazilian}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}Introdução}{18}{chapter.22}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}Resultados de comandos}{19}{chapter.24}%
+\contentsline {section}{\numberline {2.1}Codificação dos arquivos: UTF8}{19}{section.25}%
+\contentsline {section}{\numberline {2.2}Citações diretas}{19}{section.26}%
+\babel@toc {english}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\contentsline {section}{\numberline {2.3}Notas de rodapé}{20}{section.27}%
+\contentsline {section}{\numberline {2.4}Tabelas}{20}{section.31}%
+\contentsline {section}{\numberline {2.5}Figuras}{21}{section.34}%
+\contentsline {subsection}{\numberline {2.5.1}Figuras em \emph {minipages}}{21}{subsection.37}%
+\contentsline {section}{\numberline {2.6}Expressões matemáticas}{22}{section.40}%
+\contentsline {section}{\numberline {2.7}Enumerações: alíneas e subalíneas}{23}{section.42}%
+\contentsline {section}{\numberline {2.8}Espaçamento entre parágrafos e linhas}{24}{section.61}%
+\contentsline {section}{\numberline {2.9}Inclusão de outros arquivos}{25}{section.62}%
+\contentsline {section}{\numberline {2.10}Compilar o documento \LaTeX }{25}{section.63}%
+\contentsline {section}{\numberline {2.11}Remissões internas}{25}{section.66}%
+\contentsline {section}{\numberline {2.12}Divisões do documento: seção}{26}{section.68}%
+\contentsline {subsection}{\numberline {2.12.1}Divisões do documento: subseção}{26}{subsection.69}%
+\contentsline {subsubsection}{\numberline {2.12.1.1}Divisões do documento: subsubseção}{26}{subsubsection.70}%
+\contentsline {subsubsection}{\numberline {2.12.1.2}Divisões do documento: subsubseção}{26}{subsubsection.71}%
+\contentsline {subsection}{\numberline {2.12.2}Divisões do documento: subseção}{26}{subsection.72}%
+\contentsline {subsubsection}{\numberline {2.12.2.1}Divisões do documento: subsubseção}{26}{subsubsection.73}%
+\contentsline {paragraph}{\numberline {2.12.2.1.1}Esta é uma subseção de quinto nível}{26}{paragraph.74}%
+\contentsline {paragraph}{\numberline {2.12.2.1.2}Esta é outra subseção de quinto nível}{27}{paragraph.75}%
+\contentsline {paragraph}{\numberline {2.12.2.1.3}Este é um parágrafo numerado}{27}{paragraph.76}%
+\contentsline {paragraph}{\numberline {2.12.2.1.4}Esta é outro parágrafo numerado}{27}{paragraph.77}%
+\contentsline {section}{\numberline {2.13}Este é um exemplo de nome de seção longo. Ele deve estar alinhado à esquerda e a segunda e demais linhas devem iniciar logo abaixo da primeira palavra da primeira linha}{27}{section.78}%
+\contentsline {section}{\numberline {2.14}Diferentes idiomas e hifenizações}{27}{section.79}%
+\contentsline {section}{\numberline {2.15}Consulte o manual da classe \textsf {abntex2}}{29}{section.83}%
+\contentsline {section}{\numberline {2.16}Referências bibliográficas}{29}{section.84}%
+\contentsline {subsection}{\numberline {2.16.1}Acentuação de referências bibliográficas}{29}{subsection.85}%
+\contentsline {section}{\numberline {2.17}Precisa de ajuda?}{30}{section.87}%
+\contentsline {section}{\numberline {2.18}Você pode ajudar?}{30}{section.88}%
+\contentsline {section}{\numberline {2.19}Quer customizar os modelos do abn\TeX 2\ para sua instituição ou universidade?}{30}{section.89}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}Conteúdos específicos do modelo de trabalho acadêmico}{31}{chapter.90}%
+\contentsline {section}{\numberline {3.1}Quadros}{31}{section.91}%
+\contentsline {section}{\numberline {3.2}Aliquam vestibulum fringilla lorem}{31}{section.93}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}Lorem ipsum dolor sit amet}{33}{chapter.94}%
+\contentsline {section}{\numberline {4.1}Aliquam vestibulum fringilla lorem}{33}{section.95}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}Conclusão}{35}{chapter.96}%
+\vspace {\cftbeforechapterskip }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{Refer\^encias}{36}{section*.100}%
+\babel@toc {brazilian}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\renewcommand *{\cftappendixname }{AP\^ENDICE \space }
+\setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
+\cftinsert {A}
+\contentsline {part}{\uppercase {Ap\^endices}}{38}{section*.101}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {A}Quisque libero justo}{39}{appendix.102}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {B}Nullam elementum urna vel imperdiet eu metus}{40}{appendix.103}%
+\cftinsert {AAA}
+\renewcommand *{\cftappendixname }{ANEXO \space }
+\setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
+\cftinsert {A}
+\contentsline {part}{\uppercase {Anexos}}{41}{section*.104}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {A}Morbi ultrices rutrum lorem.}{42}{appendix.105}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {B}Fusce facilisis lacinia dui}{43}{appendix.106}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {C}Fusce facilisis lacinia dui}{44}{appendix.107}%
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\vspace {\cftbeforechapterskip }
+\contentsline {chapter}{\'Indice}{45}{chapter*.109}%

@@ -100,6 +100,9 @@ main_ppgea_ufrn.pdf
 
 Arquivos como `.aux`, `.bbl`, `.bcf`, `.run.xml`, `.log`, `.lof`, `.lot`, `.loq` e similares também são gerados na raiz e em subdiretórios do projeto, mas ficam cobertos pelo `.gitignore`.
 
+Exceção:
+O repositório pode manter versionados os arquivos `main_ppgea_ufrn.toc`, `main_ppgea_ufrn.lof`, `main_ppgea_ufrn.lot`, `main_ppgea_ufrn.loq`, `main_ppgea_ufrn.bbl` e `main_ppgea_ufrn.ind`. Eles são mantidos de propósito para reduzir a degradação do primeiro build em um clone fresco, especialmente quando o usuário compila apenas uma vez pelo editor.
+
 ## Observações importantes
 
 - O repositório mantém exemplos de texto herdados do modelo canônico do `abntex2`. Eles servem como demonstração e devem ser substituídos pelo conteúdo real da dissertação.

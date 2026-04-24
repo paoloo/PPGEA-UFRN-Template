@@ -23,3 +23,11 @@
 
 # Biber / BibLaTeX extras
 *.xml
+
+# Mantidos versionados para melhorar o primeiro build em clone fresco
+!main_ppgea_ufrn.bbl
+!main_ppgea_ufrn.ind
+!main_ppgea_ufrn.lof
+!main_ppgea_ufrn.loq
+!main_ppgea_ufrn.lot
+!main_ppgea_ufrn.toc
