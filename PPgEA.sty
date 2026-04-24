@@ -1,0 +1,224 @@
+%%
+%% Customizações do abnTeX2 (https://www.ctan.org/pkg/abntex2) 
+%%https://github.com/abntex/abntex2
+
+
+\ProvidesPackage{PPgEA}[22/01/20226Customizacao do abnTeX2 para PPgEA-UFRN]
+
+
+%---
+% Pacotes básicos 
+% ---
+\usepackage{lmodern}			% Usa a fonte Latin Modern			
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{microtype} 			% para melhorias de justificação
+\usepackage{xurl}               % melhora a quebra de URLs longas
+% ---
+		
+% ---
+% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
+% ---
+\usepackage{lipsum}				% para geração de dummy text
+% ---
+
+% ---
+% Pacotes de citações
+% ---
+\usepackage[brazilian,hyperpageref]{backref}	% Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite}									% Citações padrão ABNT
+
+% --- 
+% CONFIGURAÇÕES DE PACOTES
+% --- 
+
+% ---
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+	\ifcase #1 %
+		Nenhuma citação no texto.%
+	\or
+		Citado na página #2.%
+	\else
+		Citado #1 vezes nas páginas #2.%
+	\fi}%
+% ---
+
+% Evita páginas em branco extras geradas por \cleardoublepage em documentos
+% configurados para impressão frente e verso.
+\let\cleardoublepage\clearpage
+
+% Evita avisos de cabeçalho do memoir com títulos mais longos.
+\setlength{\headheight}{30pt}
+\checkandfixthelayout
+
+% Dá folga para compor melhor linhas do texto do modelo.
+\setlength{\emergencystretch}{3em}
+\hfuzz=35pt
+\vfuzz=20pt
+\hbadness=10000
+\vbadness=10000
+
+% Evita avisos de âncoras duplicadas ao reiniciar a numeração no pré-textual.
+\makeatletter
+\pdfstringdefDisableCommands{%
+  \let\uppercase\@firstofone
+  \let\MakeUppercase\@firstofone
+}
+\makeatother
+
+
+% Impressão da Capa
+%----------------------------------------------------------------------------- 
+\renewcommand{\imprimircapa}{%
+  \begin{capa}%
+    \center
+        \begin{center}
+        \includegraphics[width=.2\linewidth]{figs/brasao_gradiente.png}
+        \end{center}
+        
+    %\ABNTEXchapterfont\imprimirinstituicao  
+    \MakeUppercase\imprimirinstituicao 
+    
+    
+    
+    \vspace{40mm}
+    
+    %\ABNTEXchapterfont\imprimirautor 
+    \MakeUppercase\imprimirautor
+
+    \vspace{40mm}
+   {\ABNTEXchapterfont\bfseries\LARGE\imprimirtitulo}
+   %\ABNTEXchapterfont\imprimirtitulo
+    %{\MakeUppercase\imprimirtitulo}
+    \vfill
+    
+     %\large
+     \MakeUppercase\imprimirlocal
+     
+     %\large
+     \imprimirdata
+    
+    \vspace*{10mm}
+  \end{capa}
+}
+
+% Folha de rosto
+%--------------------------------------
+
+\makeatletter
+\renewcommand{\folhaderostocontent}{
+	\begin{center}
+		{ \ABNTEXchapterfont\large\imprimirautor}
+
+		\vspace*{\fill}\vspace*{\fill}
+		\begin{center}
+
+			\ABNTEXchapterfont\bfseries\Large\imprimirtitulo
+		\end{center}
+		\vspace*{\fill}
+
+
+		\abntex@ifnotempty{\imprimirpreambulo}{%
+			\hspace{.45\textwidth}
+			\begin{minipage}{.5\textwidth}
+				\SingleSpacing
+				\imprimirpreambulo
+			\end{minipage}%
+			\vspace*{\fill}
+
+		}%
+
+		%{\abntex@ifnotempty{\imprimirinstituicao}{\imprimirinstituicao
+%\vspace*{\fill}}}
+
+		{\large\imprimirorientadorRotulo~\imprimirorientador\par}
+	\abntex@ifnotempty{\imprimircoorientador}{%
+			{\large\imprimircoorientadorRotulo~\imprimircoorientador}%
+	}%
+		
+		\vspace*{\fill}
+
+		{\large\imprimirlocal}
+		\par
+		{\large\imprimirdata}
+		\vspace*{1cm}
+	
+	\end{center}
+}
+\makeatother
+
+
+
+
+% ---------------------------------
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+     	%pagebackref=true,
+		pdftitle={\@title}, 
+		pdfauthor={\@author},
+    	pdfsubject={\imprimirpreambulo},
+	    pdfcreator={LaTeX with abnTeX2},
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
+		plainpages=false,
+		hypertexnames=false,
+		colorlinks=true,       		% false: boxed links; true: colored links
+    	linkcolor=blue,          	% color of internal links
+    	citecolor=blue,        		% color of links to bibliography
+    	filecolor=magenta,      		% color of file links
+		urlcolor=blue,
+		bookmarksdepth=4
+}
+\makeatother
+% --- 
+% ---
+% Posiciona figuras e tabelas no topo da página quando adicionadas sozinhas
+% em um página em branco. Ver https://github.com/abntex/abntex2/issues/170
+\makeatletter
+\setlength{\@fptop}{5pt} % Set distance from top of page to first float
+\makeatother
+% ---
+
+% ---
+% Possibilita criação de Quadros e Lista de quadros.
+% Ver https://github.com/abntex/abntex2/issues/176
+%
+\newcommand{\quadroname}{Quadro}
+\newcommand{\listofquadrosname}{Lista de quadros}
+
+\newfloat[chapter]{quadro}{loq}{\quadroname}
+\newlistof{listofquadros}{loq}{\listofquadrosname}
+\newlistentry{quadro}{loq}{0}
+
+% configurações para atender às regras da ABNT
+\setfloatadjustment{quadro}{\centering}
+\counterwithout{quadro}{chapter}
+\renewcommand{\cftquadroname}{\quadroname\space} 
+\renewcommand*{\cftquadroaftersnum}{\hfill--\hfill}
+
+\setfloatlocations{quadro}{hbtp} % Ver https://github.com/abntex/abntex2/issues/176
+% ---
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip

@@ -1,0 +1,220 @@
+%% PPgEA_UFRN - Tutorial
+% --------------------------------------------------------------------
+%% Modelo de dissertação adaptado de
+%% abtex2-modelo-trabalho-academico.tex, v-1.9.7 laurocesar
+%% Copyright 2012-2018 by abnTeX2 group at http://www.abntex.net.br/ 
+%%
+
+\documentclass[
+	% -- opções da classe memoir --
+	12pt,				% tamanho da fonte
+	openany,			% evita páginas em branco para iniciar capítulos em página ímpar
+	%openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+	twoside,			% para impressão em recto e verso. Oposto a oneside
+	%oneside,
+	a4paper,			% tamanho do papel. 
+	% -- opções da classe abntex2 --
+	%chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+	%section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+	%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
+	%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+	% -- opções do pacote babel --
+	english,			% idioma adicional para hifenização
+	french,				% idioma adicional para hifenização
+	spanish,			% idioma adicional para hifenização
+	brazilian			% o último idioma é o principal do documento
+	]{abntex2}
+
+% --------------------------------------------------------------------
+% Pacotes básicos 
+% --------------------------------------------------------------------
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{microtype} 			% para melhorias de justificação
+
+% --------------------------------------------------------------------
+% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
+% --------------------------------------------------------------------
+% \usepackage{lipsum}				% para geração de dummy text
+
+\usepackage{PPgEA}
+\input{elementos_pre_textuais/capa_rosto} % CAPA e FOLHA DE ROSTO
+
+%--------------------------------------------------------------
+% compila o indice
+%--------------------------------------------------------------
+\makeindex
+
+%--------------------------------------------------------------
+% Início do documento
+%--------------------------------------------------------------
+\begin{document}
+
+% Seleciona o idioma do documento (conforme pacotes do babel)
+%\selectlanguage{english}
+\selectlanguage{brazilian}
+\frenchspacing      % Retira espaço extra obsoleto entre as frases.
+
+% ----------------------------------------------------------
+% ELEMENTOS PRÉ-TEXTUAIS
+% ----------------------------------------------------------
+% \pretextual
+
+% Capa
+\imprimircapa
+
+% Folha de rosto - (o * indica que haverá a ficha bibliográfica)
+\imprimirfolhaderosto*
+
+% ---------------------------------------------------------------------
+% Ficha bibliografica
+% ---------------------------------------------------------------------
+\input{elementos_pre_textuais/ficha_catalografica} 
+% A Biblioteca Central da UFRN fornecerá um PDF com a ficha catalográfica definitiva após a defesa do trabalho. Quando estiver com o documento, salve-o como PDF no diretório do seu projeto e substitua todo o conteúdo de implementação deste arquivo pelo comando abaixo:
+
+% \begin{fichacatalografica}
+%     \includepdf{fig_ficha_catalografica.pdf}
+% \end{fichacatalografica}
+
+% ---------------------------------------------------------------------
+% Inserir errata
+% ---------------------------------------------------------------------
+
+%\input{errata}
+
+% ---------------------------------------------------------------------
+% Inserir folha de aprovação
+% ---------------------------------------------------------------------
+% Elemento obrigatório da NBR 14724:2024 (seção correspondente à folha de aprovação). 
+\input{elementos_pre_textuais/folha_aprovacao}
+% Você pode utilizar este modelo até a aprovação
+% do trabalho. Após isso, substitua todo o conteúdo deste arquivo por uma
+% imagem da página assinada pela banca com o comando abaixo:
+%
+% \begin{folhadeaprovacao}
+% \includepdf{folhadeaprovacao_final.pdf}
+% \end{folhadeaprovacao}
+%
+
+% ---------------------------------------------------------------------
+% Dedicatória
+% ---------------------------------------------------------------------
+\input{elementos_pre_textuais/dedicatoria}
+
+% ---------------------------------------------------------------------
+% Agradecimentos
+% ---------------------------------------------------------------------
+\input{elementos_pre_textuais/agradecimentos}
+
+% ---------------------------------------------------------------------
+% Epígrafe
+% ---------------------------------------------------------------------
+\input{elementos_pre_textuais/epigrafe}
+
+% ---------------------------------------------------------------------
+% RESUMOS
+% ---------------------------------------------------------------------
+\input{elementos_pre_textuais/resumo_abstract}
+
+% ---------------------------------------------------------------------
+% Lista de ilustrações
+% ---------------------------------------------------------------------
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
+
+% ---------------------------------------------------------------------
+% Lista de quadros
+% ---------------------------------------------------------------------
+\pdfbookmark[0]{\listofquadrosname}{loq}
+\listofquadros*
+\cleardoublepage
+
+% ---------------------------------------------------------------------
+% Lista de tabelas
+% ---------------------------------------------------------------------
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\cleardoublepage
+
+% ---------------------------------------------------------------------
+% Lista de abreviaturas e siglas
+% ---------------------------------------------------------------------
+\input{elementos_pre_textuais/lista_abrev}
+
+% ---------------------------------------------------------------------
+% Lista de símbolos
+% ---------------------------------------------------------------------
+\input{elementos_pre_textuais/lista_simb}
+
+% ---------------------------------------------------------------------
+% Sumário
+% ---------------------------------------------------------------------
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+
+% ----------------------------------------------------------
+% ELEMENTOS TEXTUAIS - CAPÍTULOS
+% ----------------------------------------------------------
+\textual
+
+\include{elementos_textuais/intro_cap}
+\include{elementos_textuais/abntex2-modelo-include-comandos}
+\include{elementos_textuais/3_cap}
+\include{elementos_textuais/4_cap}
+\include{elementos_textuais/5_cap}
+
+% ----------------------------------------------------------
+% ELEMENTOS PÓS-TEXTUAIS
+% ----------------------------------------------------------
+\postextual
+% ----------------------------------------------------------
+
+% ----------------------------------------------------------
+% Referências bibliográficas
+% ----------------------------------------------------------
+\bibliography{referencias}
+
+% ----------------------------------------------------------
+% Glossário
+% ----------------------------------------------------------
+%
+% Consulte o manual da classe abntex2 para orientações sobre o glossário.
+%
+%\glossary
+
+% ----------------------------------------------------------
+% Apêndices
+% ----------------------------------------------------------
+
+\begin{apendicesenv}
+    % Imprime uma página indicando o início dos apêndices
+    \partapendices
+    \include{elementos_pos_textuais/apend_A}
+    \include{elementos_pos_textuais/apend_B}
+\end{apendicesenv}
+
+% ----------------------------------------------------------
+% Anexos
+% ----------------------------------------------------------
+\begin{anexosenv}
+  % Imprime uma página indicando o início dos anexos
+    \partanexos
+    \include{elementos_pos_textuais/anex_A}
+    \include{elementos_pos_textuais/anex_B}
+    \include{elementos_pos_textuais/anex_C}
+
+\end{anexosenv}
+
+%---------------------------------------------------------------------
+% INDICE REMISSIVO
+%---------------------------------------------------------------------
+\phantompart
+\printindex
+
+
+\end{document}
