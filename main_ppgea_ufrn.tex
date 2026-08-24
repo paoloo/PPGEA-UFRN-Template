@@ -42,7 +42,40 @@
 
 \usepackage{PPgEA}
 \addbibresource{referencias.bib}
-\input{elementos_pre_textuais/capa_rosto} % CAPA e FOLHA DE ROSTO
+
+% ============================================================
+% DADOS DO TRABALHO
+% ------------------------------------------------------------
+% Ajuste APENAS este bloco para preencher autor, título,
+% orientação, instituição e banca examinadora. Estas informações
+% alimentam automaticamente a capa, a folha de rosto, a ficha
+% catalográfica e a folha de aprovação.
+% ============================================================
+\autor{Autor}
+\titulo{Modelo de Dissertação PPgEA com \abnTeX}
+\orientador{Orientador}
+\coorientador{Coorientador} % se não houver coorientador, comente ou apague esta linha
+\local{Natal}
+\data{\the\year}
+\tipotrabalho{Dissertação}
+\instituicao{%
+  Universidade Federal do Rio Grande do Norte\\
+  %\par
+  Escola de Ciências e Tecnologia\\
+  %\par
+  Programa de Pós-Graduação em Engenharia Aeroespacial}
+
+% O preambulo deve conter o tipo do trabalho, o objetivo,
+% o nome da instituição e a área de concentração
+\preambulo{Dissertação apresentada ao Programa de Pós-Graduação em Engenharia Aeroespacial da Universidade Federal do Rio Grande do Norte, como parte dos requisitos para a obtenção do título de \textbf{Mestre em Engenharia Aeroespacial}, área de concentração: \textbf{Materiais e Tecnologias Aeroespaciais}}
+
+% Data e membros da banca examinadora (folha de aprovação)
+\newcommand{\dataDefesa}{01 de janeiro de 2030}
+\newcommand{\bancaConvidadoUm}{Nome do Professor Convidado 1}
+\newcommand{\bancaConvidadoDois}{Nome do Professor Convidado 2}
+%\newcommand{\bancaConvidadoTres}{Nome do Professor Convidado 3}
+%\newcommand{\bancaConvidadoQuatro}{Nome do Professor Convidado 4}
+% ============================================================
 
 %--------------------------------------------------------------
 % compila o indice

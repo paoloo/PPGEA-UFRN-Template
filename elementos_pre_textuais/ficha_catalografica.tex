@@ -1,3 +1,4 @@
+\makeatletter
 \begin{fichacatalografica}
 	\sffamily
 	\vspace*{\fill}					% Posição vertical
@@ -13,10 +14,10 @@
 	
 	\hspace{0.5cm} \thelastpage p.\\
 	
-	\hspace{0.5cm} \imprimirorientadorRotulo~\imprimirorientador\\ 
+	\hspace{0.5cm} \imprimirorientadorRotulo~\imprimirorientador\\
 
-	\hspace{0.5cm} \imprimircoorientadorRotulo~\imprimircoorientador\\
-	
+	\abntex@ifnotempty{\imprimircoorientador}{\hspace{0.5cm} \imprimircoorientadorRotulo~\imprimircoorientador\\}
+
 		\hspace{0.5cm}
 		\parbox[t]{\dimexpr\linewidth-0.5cm\relax}{\imprimirtipotrabalho~--~\imprimirinstituicao,
 		\imprimirdata.}\\
@@ -32,3 +33,4 @@
 		\end{minipage}}
 	\end{center}
 \end{fichacatalografica}
+\makeatother
